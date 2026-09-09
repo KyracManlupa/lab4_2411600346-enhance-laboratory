@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #1E3A5F;
+    --secondary-color: #4A6FA5;
+    --background-color: #F5F7FA;
+    --text-color: #2D3748;
+    --light-accent: #E8F0F7;
+    --success-color: #198754;
+}
+
+/* General Page Styling */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Page */
+.container-fluid.min-vh-100 {
+    background: linear-gradient(
+        135deg,
+        var(--light-accent),
+        var(--background-color)
+    );
+}
+
+/* Login Card */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Login Card Header */
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-bottom: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Form Inputs */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 111, 165, 0.25);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--light-accent);
+    min-height: calc(100vh - 56px);
+}
+
+.sidebar .nav-link {
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Dashboard Statistic Cards */
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card .card-body {
+    padding: 25px;
+}
+
+/* Recent Activity Card */
+main .card-header {
+    background-color: var(--light-accent);
+    color: var(--text-color);
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Table */
+.table th {
+    color: var(--primary-color);
+}
+
+/* Responsive Adjustment */
+@media (max-width: 767px) {
+
+    .sidebar {
+        min-height: auto;
+    }
+
+}
